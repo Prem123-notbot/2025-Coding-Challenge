@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+string s = "My name is Prem";
+string word = "";
+string rev_s = "";
+
+for(int i = s.length() - 1; i >= 0; i--){
+        if(s[i] == ' '){
+            word = s[i] + word;
+        } else {
+            rev_s += word + " ";
+            word = "";
+        }
+    }
+        rev_s += word;
+        cout << rev_s ;
+        return 0;
+}
